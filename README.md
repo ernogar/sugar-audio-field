@@ -1,5 +1,4 @@
 # SugarCRM Audio Recorder field type
-## Based on Matt Diamond [Recorder.js](https://github.com/mattdiamond/Recorderjs) plugin 
 
 ### To install the field in a sugarCRM instance:
 
@@ -7,7 +6,7 @@
 2. On Module Upload -> Choose File, select the sugar-audio-field.zip package and click the upload button.
 3. On Uploaded Packages -> Recorder, click the install button and accept the instalation.
 
-### To add a recorder field to a MODULE by code:
+### To add a recorder field to a module:
 
 1. Create a field of type 'Recorder' for the module
 
@@ -58,3 +57,5 @@ class ModuleManager {
 }
 ?>
 ```
+
+##### Programed using Matt Diamond [Recorder.js](https://github.com/mattdiamond/Recorderjs) javascript plugin 
