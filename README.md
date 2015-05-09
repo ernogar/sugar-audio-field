@@ -2,14 +2,13 @@
 
 ### To install the field in a sugarCRM instance:
 
-1. Go to the administration page -> Developer Tools -> Module Loader
-2. On Module Upload -> Choose File, select the sugar-audio-field.zip package and click the upload button.
-3. On Uploaded Packages -> Recorder, click the install button and accept the instalation.
+1. Go to the Administration page -> Developer Tools -> Module Loader
+2. Click the Choose file button on Module Upload and select the sugar-audio-field.zip package
+3. Click the Install button on the Recorder uploaded package and accept the instalation
 
 ### To add a recorder field to a module:
 
-1. Create a field of type 'Recorder' for the module
-
+* Create a field of type 'Recorder' for the module
 ```PHP
 <?php
 
@@ -23,18 +22,14 @@ $dictionary['MODULE']['fields']['NAME']= array(
 
 ?>
 ```
-
-2. Create a folder where to save the recorded files in 'audio/MODULE':
-
+* Create a folder where to save the recorded files in 'audio/MODULE'
 ```PHP
 array (
 	'from' => '<basepath>/include/blanco.php',
 	'to' => 'audio/MODULE/blanco.php',
 ),
 ```
-
-3. Add a logic hook to the module to manage the field:
-
+* Add a logic hook to the module to manage the field
 ```PHP
 <?php
 class ModuleManager {
@@ -58,4 +53,4 @@ class ModuleManager {
 ?>
 ```
 
-##### Programed using Matt Diamond [Recorder.js](https://github.com/mattdiamond/Recorderjs) javascript plugin 
+Developed in php using Matt Diamond [Recorder.js](https://github.com/mattdiamond/Recorderjs) javascript plugin 
